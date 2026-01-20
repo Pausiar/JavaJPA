@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="ca" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Llistat de Ciutats</title>
     <link rel="stylesheet" type="text/css" href="/css/llistatGeneral.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -11,31 +13,38 @@
     <h1>Llistat de Ciutats</h1>
 </header>
 
-<table>
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Nom</th>
-        <th>Població</th>
-        <th>Descripció</th>
-        <th>Imatge</th>
-        <th>Província</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="ciutat : ${ciutats}">
-        <td th:text="${ciutat.id}"></td>
-        <td th:text="${ciutat.nom}"></td>
-        <td th:text="${ciutat.poblacio}"></td>
-        <td th:text="${ciutat.descripcio}"></td>
-        <td>
-            <img th:if="${ciutat.imatge}" th:src="${ciutat.imatge}" alt="Imatge de la ciutat"/>
-            <span th:if="${ciutat.imatge == null}">Sense imatge</span>
-        </td>
-        <td th:text="${ciutat.provincia.nom}"></td>
-    </tr>
-    </tbody>
-</table>
+<main class="container">
+    <div style="margin-bottom: 20px;">
+        <a href="/" class="btn btn-secondary">← Tornar al menú</a>
+    </div>
 
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Població</th>
+            <th>Descripció</th>
+            <th>Imatge</th>
+            <th>Província</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="ciutat : ${ciutats}">
+            <td th:text="${ciutat.id}"></td>
+            <td th:text="${ciutat.nom}"></td>
+            <td th:text="${#numbers.formatInteger(ciutat.poblacio, 0, 'COMMA')}"></td>
+            <td th:text="${ciutat.descripcio}"></td>
+            <td>
+                <img th:if="${ciutat.imatge}" th:src="${ciutat.imatge}" alt="Imatge de la ciutat"/>
+                <span th:if="${ciutat.imatge == null}" class="badge badge-secondary">Sense imatge</span>
+            </td>
+            <td>
+                <span class="badge badge-primary" th:text="${ciutat.provincia.nom}"></span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
 </body>
 </html>

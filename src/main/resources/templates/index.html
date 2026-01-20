@@ -1,54 +1,39 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="ca" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Ciutats, Províncies i Països</title>
     <link rel="stylesheet" type="text/css" href="/css/llistatGeneral.css">
-    <style>
-        .menu-container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-        }
-        .menu-item {
-            background-color: #f4f4f4;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 20px;
-            margin: 15px 0;
-            text-align: center;
-        }
-        .menu-item a {
-            text-decoration: none;
-            color: #333;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        .menu-item:hover {
-            background-color: #e0e0e0;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <h1>Gestió de Ciutats, Províncies i Països</h1>
+    <h1>🌍 Gestió de Ciutats, Províncies i Països</h1>
 </header>
 
 <div class="menu-container">
     <div class="menu-item">
-        <a href="/llistats/ciutats">📍 Llistat de Ciutats</a>
+        <div style="font-size: 3em; margin-bottom: 15px;">📍</div>
+        <a href="/llistats/ciutats">Llistat de Ciutats</a>
+        <p style="color: #718096; margin-top: 10px; font-size: 14px;">Visualitza totes les ciutats amb Thymeleaf</p>
     </div>
     <div class="menu-item">
-        <a href="/provincies">🗺️ Llistat de Províncies (API)</a>
+        <div style="font-size: 3em; margin-bottom: 15px;">🗺️</div>
+        <a href="/provincies">Llistat de Províncies</a>
+        <p style="color: #718096; margin-top: 10px; font-size: 14px;">API REST amb dades en format JSON</p>
     </div>
     <div class="menu-item">
-        <a href="/paisos">🌍 Llistat de Països (API)</a>
+        <div style="font-size: 3em; margin-bottom: 15px;">🌎</div>
+        <a href="/paisos">Llistat de Països</a>
+        <p style="color: #718096; margin-top: 10px; font-size: 14px;">API REST amb dades en format JSON</p>
     </div>
 </div>
 
-<footer style="text-align: center; margin-top: 50px; color: #777;">
-    <p>Aplicació Spring Boot amb JPA i Thymeleaf</p>
+<footer>
+    <p>🚀 Aplicació Spring Boot amb JPA i Thymeleaf</p>
+    <p style="margin-top: 8px; font-size: 12px;">Fet amb ❤️ per Pausiar</p>
 </footer>
 
 </body>
