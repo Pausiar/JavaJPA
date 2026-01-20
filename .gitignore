@@ -29,3 +29,21 @@ Thumbs.db
 .env
 .env.local
 
+# Gradle wrapper jar and wrapper cache
+gradle-wrapper.jar
+
+# Keystores and secrets
+*.keystore
+*.jks
+
+# Local env files
+.env
+.env.local
+
+# Ignore IntelliJ out/ directory
+out/
+
+# Optional: ignore data dumps (uncomment if they are sensitive)
+# data.sql
+
+# End of file
