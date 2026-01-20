@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Ciutats, Províncies i Països</title>
+    <link rel="stylesheet" type="text/css" href="/css/llistatGeneral.css">
+    <style>
+        .menu-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .menu-item {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        .menu-item a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .menu-item:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gestió de Ciutats, Províncies i Països</h1>
+</header>
+
+<div class="menu-container">
+    <div class="menu-item">
+        <a href="/llistats/ciutats">📍 Llistat de Ciutats</a>
+    </div>
+    <div class="menu-item">
+        <a href="/provincies">🗺️ Llistat de Províncies (API)</a>
+    </div>
+    <div class="menu-item">
+        <a href="/paisos">🌍 Llistat de Països (API)</a>
+    </div>
+</div>
+
+<footer style="text-align: center; margin-top: 50px; color: #777;">
+    <p>Aplicació Spring Boot amb JPA i Thymeleaf</p>
+</footer>
+
+</body>
+</html>
