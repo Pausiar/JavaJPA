@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ca" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Llistat de Provincies</title>
+    <link rel="stylesheet" type="text/css" href="/css/llistatGeneral.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Llistat de Provincies</h1>
+</header>
+
+<main class="container">
+    <div style="margin-bottom: 20px;">
+        <a href="/" class="btn btn-secondary">← Tornar al menu</a>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Pais</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="provincia : ${provincies}">
+            <td th:text="${provincia.id}"></td>
+            <td th:text="${provincia.nom}"></td>
+            <td>
+                <span class="badge badge-primary" th:text="${provincia.pais.nom}"></span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>

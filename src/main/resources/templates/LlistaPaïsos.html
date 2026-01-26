@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ca" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Llistat de Paisos</title>
+    <link rel="stylesheet" type="text/css" href="/css/llistatGeneral.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Llistat de Paisos</h1>
+</header>
+
+<main class="container">
+    <div style="margin-bottom: 20px;">
+        <a href="/" class="btn btn-secondary">← Tornar al menu</a>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="pais : ${paisos}">
+            <td th:text="${pais.id}"></td>
+            <td th:text="${pais.nom}"></td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>

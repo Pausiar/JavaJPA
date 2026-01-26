@@ -52,12 +52,12 @@ INSERT INTO ciutat (nom, poblacio, descripcio, imatge, provincia_id) VALUES ('Mi
 INSERT INTO ciutat (nom, poblacio, descripcio, imatge, provincia_id) VALUES ('Bèrgam', 121639, 'Ciutat alta', '/img/bergam.jpg', 8);
 
 -- Insertar Festes i Events
-INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('La Mercè', 'Festa major de Barcelona amb correfocs, castells i concerts', 'merce.jpg');
-INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('Falles', 'Festa tradicional valenciana amb monuments de falla i mascletàs', 'falles.jpg');
-INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('San Fermín', 'Festes de Pamplona famoses pels encierros', 'sanfermin.jpg');
-INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('Tomatina', 'Batalla de tomàquets a Bunyol', 'tomatina.jpg');
-INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('Carnaval de Venècia', 'Carnaval famós per les màscares i disfresses', 'carnaval_venecia.jpg');
-INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('Festa de la Vendimia', 'Celebració de la collita del raïm', 'vendimia.jpg');
-INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('Sant Joan', 'Revetlla amb fogueres i petards', 'santjoan.jpg');
-INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('Oktoberfest', 'Festival de la cervesa', 'oktoberfest.jpg');
+INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('La Mercè', 'Festa major de Barcelona amb correfocs, castells i concerts', '/img/merce.jpg');
+INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('Falles', 'Festa tradicional valenciana amb monuments de falla i mascletàs', '/img/falles.jpg');
+INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('San Fermín', 'Festes de Pamplona famoses pels encierros', '/img/sanfermin.jpg');
+INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('Tomatina', 'Batalla de tomàquets a Bunyol', '/img/tomatina.jpg');
+INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('Carnaval de Venècia', 'Carnaval famós per les màscares i disfresses', '/img/carnaval_venecia.jpg');
+INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('Festa de la Vendimia', 'Celebració de la collita del raïm', '/img/vendimia.jpg');
+INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('Sant Joan', 'Revetlla amb fogueres i petards', '/img/santjoan.jpg');
+INSERT INTO festes_events (nom, descripcio, imatge) VALUES ('Oktoberfest', 'Festival de la cervesa', '/img/oktoberfest.jpg');
 

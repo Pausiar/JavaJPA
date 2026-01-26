@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ca" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Llistat de Festes i Events</title>
+    <link rel="stylesheet" type="text/css" href="/css/llistatGeneral.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        table img {
+            width: 100px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Llistat de Festes i Events</h1>
+</header>
+
+<main class="container">
+    <div style="margin-bottom: 20px;">
+        <a href="/" class="btn btn-secondary">← Tornar al menu</a>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Descripcio</th>
+            <th>Imatge</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="festa : ${festes}">
+            <td th:text="${festa.id}"></td>
+            <td th:text="${festa.nom}"></td>
+            <td th:text="${festa.descripcio}"></td>
+            <td>
+                <img th:if="${festa.imatge}" th:src="${festa.imatge}" alt="Imatge de la festa"/>
+                <span th:if="${festa.imatge == null}" class="badge badge-secondary">Sense imatge</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+</html>
