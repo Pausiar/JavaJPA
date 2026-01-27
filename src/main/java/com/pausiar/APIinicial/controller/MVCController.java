@@ -34,7 +34,7 @@ public class MVCController {
         //afegim llista al model amb el nom "ciutats"
         model.addAttribute("ciutats", ciutatList);
 
-        //retornem el nom de la plantilla
+        //retornem nom de plantilla
         return "LlistatCiutats";
     }
 
