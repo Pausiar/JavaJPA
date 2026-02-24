@@ -26,7 +26,7 @@ Descripció de cada entitat del sistema:
 
 ## 3) Diagrama E/R de la base de dades
 
-![Diagrama ER Base de Dades Valorant](ER-dbValorant.PNG)
+![Diagrama ER Base de Dades Valorant](imgesMemoria/ER-dbValorant.PNG)
 
 ### Relacions entre entitats:
 
@@ -298,36 +298,94 @@ He seguit aquest ordre perquè és necessari respectar les **claus foranes**. Pe
 ## 6) Proves amb Postman
 
 ### 6.1) GET - Llistar tots els personatges
-![GET Personatges](imgPostman/postman1.png)
+![GET Personatges](imgesMemoria/postman1.png)
 
 ---
 
 ### 6.2) POST - Crear un nou element
-![POST Crear](imgPostman/postman2.png)
+![POST Crear](imgesMemoria/postman2.png)
 
 ---
 
 ### 6.3) GET - Verificar creació
-![GET Verificar](imgPostman/postman3.png)
+![GET Verificar](imgesMemoria/postman3.png)
 
 ---
 
 ### 6.4) PUT - Actualitzar un element
-![PUT Actualitzar](imgPostman/postman4.PNG)
+![PUT Actualitzar](imgesMemoria/postman4.PNG)
 
 ---
 
 ### 6.5) DELETE - Eliminar un element
-![DELETE Eliminar](imgPostman/postman5.png)
+![DELETE Eliminar](imgesMemoria/postman5.png)
 
 ---
 
 ### 6.6) GET - Verificar eliminació
-![GET Verificar eliminació](imgPostman/postman6.png)
+![GET Verificar eliminació](imgesMemoria/postman6.png)
 
 ---
 
-## 7) Conclusions del projecte
+## 7) Ampliació Fitxers
+
+### Proves
+
+![Prova 1](imgesMemoria/foto1.png)
+
+---
+
+![Prova 2](imgesMemoria/foto2.png)
+
+---
+
+![Prova 3](imgesMemoria/foto3.png)
+
+---
+
+![Prova 4](imgesMemoria/foto4.png)
+
+---
+
+![Prova 5](imgesMemoria/foto5.png)
+
+---
+
+![Prova 6](imgesMemoria/foto6.png)
+
+---
+
+![Prova 7](imgesMemoria/foto7.png)
+
+---
+
+### Proves Postman
+
+![Postman Upload 1](imgesMemoria/postman1-2.png)
+
+---
+
+![Postman Upload 2](imgesMemoria/postman2-2.png)
+
+---
+
+![Postman Upload 3](imgesMemoria/postman3-2.png)
+
+---
+
+![Postman Upload 4](imgesMemoria/postman4-2.png)
+
+---
+
+![Postman Upload 5](imgesMemoria/postman5-2.png)
+
+---
+
+![Postman Upload 6](imgesMemoria/postman6-2.png)
+
+---
+
+## 8) Conclusions del projecte
 
 Durant el desenvolupament d'aquest projecte he après com funciona una API REST i com s'utilitzen els endpoints per treballar amb les dades. Cada endpoint correspon a una operació específica: GET per consultar, POST per crear, PUT per actualitzar i DELETE per eliminar.
 
